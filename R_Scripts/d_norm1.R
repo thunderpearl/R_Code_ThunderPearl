@@ -11,3 +11,14 @@ plot(x,y)
 
 # Save the file.
 dev.off()
+
+
+
+
+
+
+# Generating the random numbers with normal distribution
+my_random_norm <- rnorm(1000)
+
+
+hist(my_random_norm)

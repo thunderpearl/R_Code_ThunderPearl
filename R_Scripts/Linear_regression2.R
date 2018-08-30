@@ -4,13 +4,18 @@ y <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
 relation <- lm(y~x)
 
 # Give the chart file a name.
-png(file = "linearregression.png")
+#png(file = "linearregression.png")
 
 # Plot the chart.
 plot(y,x,col = "blue",main = "Height & Weight Regression",
      abline(lm(x~y)),cex = 1.3,pch = 16,xlab = "Weight in Kg",ylab = "Height in cm")
 
 # Save the file.
-dev.off()
+#dev.off()
 
 print("The image has been saved....")
+
+
+# Right plot
+plot(x,y,col = "blue",main = "Height & Weight Regression",
+     abline(lm(y~x)),cex = 1.3,pch = 16,xlab = "Weight in Kg",ylab = "Height in cm")
