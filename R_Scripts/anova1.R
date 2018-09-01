@@ -39,3 +39,4 @@ my_anove_result1 <- aov(values ~ ind, data = my_stacked_data1)
 
 summary(my_anove_result1)
 
+print(summary(my_anove_result1))
